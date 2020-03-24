@@ -1,0 +1,260 @@
+html {
+    font-size: 1.1vw;
+}
+
+* {
+    font-family: Chilanka;
+}
+
+body {
+    background-color: #ccc;
+}
+
+
+
+/* Mecanismo */
+
+
+
+header#mecanismo {
+    display: block;
+    background-color: #cc3;
+    box-shadow: 10px 10px 5px #111;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+button.botão {
+    background-color: #c33;
+}
+
+button.botão:hover {
+    background-color: #33c;
+}
+
+div#campoPalavra {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+}
+
+div.letra {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 2px #000;
+    border-radius: 5px;
+}
+
+div.hífen {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+div.letra span, div.hífen span {
+    width: 100%;
+    height: 100%;
+    font-size: 20pt;
+    text-align: center;
+    line-height: 60px;
+}
+
+button#novaPalavra {
+    width: 120px;
+    height: 40px;
+
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    font-size: 14pt;
+    color: #fff;
+    cursor: pointer;
+}
+
+div#inserirLetra label{
+    font-size: 14pt;
+}
+
+input#letraEscolhida, button#testarLetra {
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    font-size: 14pt;
+    color: #fff;
+    text-align: center;
+}
+
+input#letraEscolhida {
+    width: 40px;
+    height: 40px;
+    background-color: #c33;
+    text-transform: uppercase;
+}
+
+button#testarLetra {
+    width: 120px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+button#dica {
+    width: 80px;
+    height: 40px;
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    font-size: 14pt;
+    color: #fff;
+}
+
+div#letrasDigitadas {
+    font-size: 14pt;
+    margin-top: 10px;
+}
+
+
+
+/* Forca */
+
+
+
+section#forca {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Boneco */
+
+div#boneco{    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    width: 8em;
+    height: 21em;
+
+    padding-right: 4em;
+    padding-top: 1em;
+    border-right: solid 0.8em #000;
+    border-top: solid 0.8em #000;
+}
+
+div#cabeça, div#tronco, div#braços, div#pernas, div#olhos {
+    visibility: hidden;
+}
+
+div#tronco, div#braçoEsquerdo, div#braçoDireito, div#pernaEsquerda, div#pernaDireita {
+    border: solid 1px #000;
+    box-sizing: border-box;
+}
+
+/* Cabeça */
+
+div#cabeça {
+    width: 5em;
+    height: 5em;
+    border: solid 2px #000;
+    border-radius: 100%;
+}
+
+/* Tronco */
+
+div#tronco {
+    height: 10em;
+
+    position: absolute;
+    top: 6.2em;
+}
+
+/* Membros */
+
+div#braços, div#pernas {
+    position: absolute;
+}
+
+/* Braços */
+
+div#braçoEsquerdo, div#braçoDireito {
+    height: 5em;
+
+    position: absolute;
+    top: 5em;
+}
+
+div#braçoEsquerdo {
+    left: -1.8em;
+    transform: rotate(45deg);
+}
+
+div#braçoDireito {
+    left: 1.75em;
+    transform: rotate(-45deg);
+}
+
+/* Pernas */
+
+div#pernaEsquerda, div#pernaDireita {
+    height: 7em;
+
+    position: absolute;
+    top: 14.1em;
+}
+
+div#pernaEsquerda {
+    left: -2.5em;
+    transform: rotate(45deg);
+}
+
+div#pernaDireita {
+    left: 2.45em;
+    transform: rotate(-45deg);
+}
+
+/* Olhos */
+
+div#olhos{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1.8em;
+    left: -2.7em;
+}
+
+div.traço1, div.traço2 {
+    width: 0em;
+    height: 0.9em;
+    border: solid 1px #f00;
+    position: absolute;
+}
+
+div.traço1 {
+    transform: rotate(45deg);
+}
+
+div.traço2 {
+    transform: rotate(-45deg);
+}
+
+div#olhoEsquerdo {
+    position: relative;
+    left: -0.9em;
+}
+
+div#olhoDireito {
+    position: relative;
+    left: 0.9em;
+}

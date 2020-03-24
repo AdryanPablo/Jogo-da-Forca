@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frutas</title>
+    <link rel = 'stylesheet' href = './forca.css'>
+    <script>
+
+        var frutas = [
+            'Abacate',
+            'Abacaxi',
+            'Açaí',
+            'Acerola',
+            'Ameixa',
+            'Amêndoa',
+            'Amora',
+            'Avelã',
+            'Babaçu',
+            'Banana',
+            'Cacau',
+            'Cajá',
+            'Caju',
+            'Caqui',
+            'Carambola',
+            'Castanha',
+            'Castanha-do-Pará',
+            'Cereja',
+            'Coco',
+            'Cupuaçu',
+            'Damasco',
+            'Dendê',
+            'Embaúba',
+            'Figo',
+            'Framboesa',
+            'Fruta-do-Conde',
+            'Fruta-Pão',
+            'Goiaba',
+            'Graviola',
+            'Groselha',
+            'Guaraná',
+            'Jabuticaba',
+            'Jaca',
+            'Jambo',
+            'Jamelão',
+            'Jatobá',
+            'Jenipapo',
+            'Kiwi',
+            'Laranja',
+            'Limão',
+            'Lima',
+            'Lichia',
+            'Maçã',
+            'Manga',
+            'Maracujá',
+            'Marmelo',
+            'Melancia',
+            'Melão',
+            'Mexerica',
+            'Mirtilo',
+            'Morango',
+            'Noz',
+            'Pera',
+            'Pêssego',
+            'Pitanga',
+            'Pinha',
+            'Pistache',
+            'Romã',
+            'Tangerina',
+            'Tamarindo',
+            'Uva'
+        ]
+        var listaDePalavras = [ frutas ]
+        var tiposDePalavras = [ 'Frutas' ]
+        
+    </script>
+    <script src = './forca.js'></script>
+</head>
+
+<body>
+
+    <header id = 'mecanismo'>
+
+        <button type = 'button' class = 'botão' id = 'novaPalavra' onclick = 'novaPalavra()'>Nova Palavra</button>
+        
+        <div id = 'campoPalavra'></div>
+        <div id = 'inserirLetra'>
+
+            <label for = 'letraEscolhida'>Letra: </label>
+            <input type = 'text' id = 'letraEscolhida'>
+            <button type = 'submit' class = 'botão' id = 'testarLetra' onclick = 'testarLetra()'>Testar Letra</button>
+
+        </div>
+        <div id = 'letrasDigitadas'></div>
+
+    </header>
+
+    <section id = 'forca'>
+
+        <div id = 'boneco'>
+
+            <div id = 'cabeça'></div>
+
+            <div id = 'olhos'>
+                <div id = 'olhoEsquerdo'>
+                    <div class = 'traço1'></div>
+                    <div class = 'traço2'></div>
+                </div>
+                <div id = 'olhoDireito'>
+                    <div class = 'traço1'></div>
+                    <div class = 'traço2'></div>
+                </div>
+            </div>         
+
+            <div id = 'tronco'></div>
+
+            <div id = 'braços'>
+                <div id = 'braçoEsquerdo'></div>
+                <div id = 'braçoDireito'></div>
+            </div>
+
+            <div id = 'pernas'>
+                <div id = 'pernaEsquerda'></div>
+                <div id = 'pernaDireita'></div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mix</title>
+    <link rel = 'stylesheet' href = './forca.css'>
+    <script>
+
+        var animais = [
+            'Abelha',
+            'Abutre',
+            'Águia',
+            'Albatroz',
+            'Alce',
+            'Alpaca',
+            'Anaconda',
+            'Andorinha',
+            'Anta',
+            'Antílope',
+            'Aranha',
+            'Arara',
+            'Asno',
+            'Atum',
+            'Avestruz',
+            'Babuíno',
+            'Bacalhau',
+            'Bagre',
+            'Baiacu',
+            'Baleia',
+            'Barata',
+            'Beija-flor',
+            'Besouro',
+            'Bem-te-vi',
+            'Bezerro',
+            'Bicho-da-Seda',
+            'Bode',
+            'Boi',
+            'Borboleta',
+            'Boto',
+            'Búfalo',
+            'Burro',
+            'Cabra',
+            'Cachalote',
+            'Cachorro',
+            'Cadela',
+            'Cágado',
+            'Camaleão',
+            'Camarão',
+            'Camelo',
+            'Camundongo',
+            'Canário',
+            'Canguru',
+            'Cão',
+            'Capivara',
+            'Caracol',
+            'Caranguejo',
+            'Carneiro',
+            'Carrapato',
+            'Cascavel',
+            'Castor',
+            'Cavalo',
+            'Cavalo-Marinho',
+            'Cegonha',
+            'Centopeia',
+            'Chimpanzé',
+            'Cigarra',
+            'Cisne',
+            'Coala',
+            'Cobra',
+            'Codorna',
+            'Coelho',
+            'Coiote',
+            'Coruja',
+            'Corvo',
+            'Crocodilo',
+            'Cupim',
+            'Cutia',
+            'Diabo-da-Tasmânia',
+            'Dinossauro',
+            'Doninha',
+            'Dourado',
+            'Dragão-de-Komodo',
+            'Dromedário',
+            'Égua',
+            'Elefante',
+            'Ema',
+            'Enguia',
+            'Escaravelho',
+            'Escorpião',
+            'Esponja',
+            'Esquilo',
+            'Estrela-do-Mar',
+            'Faisão',
+            'Falcão',
+            'Flamingo',
+            'Foca',
+            'Formiga',
+            'Furão',
+            'Gafanhoto',
+            'Gaivota',
+            'Galinha',
+            'Galo',
+            'Gambá',
+            'Ganso',
+            'Garça',
+            'Garoupa',
+            'Gato',
+            'Gavião',
+            'Gazela',
+            'Girafa',
+            'Girino',
+            'Gnu',
+            'Golfinho',
+            'Gorila',
+            'Gralha',
+            'Grifo',
+            'Grilo',
+            'Guará',
+            'Guaxinim',
+            'Hamster',
+            'Hiena',
+            'Hipopótamo',
+            'Iguana',
+            'Jabuti',
+            'Jacaré',
+            'Jacu',
+            'Jaguá',
+            'Jamanta',
+            'Jararaca',
+            'Javali',
+            'Jegue',
+            'Jiboia',
+            'Joaninha',
+            'João-de-Barro',
+            'Jumento',
+            'Koala',
+            'Lacraia',
+            'Lagarta',
+            'Lagartixa',
+            'Lagarto',
+            'Lagosta',
+            'Leão',
+            'Leão-Marinho',
+            'Lebre',
+            'Lêmure',
+            'Leopardo',
+            'Lesma',
+            'Lhama',
+            'Libélula',
+            'Lobo',
+            'Lombriga',
+            'Lontra',
+            'Lula',
+            'Macaco',
+            'Mamute',
+            'Mariposa',
+            'Marisco',
+            'Marmota',
+            'Marreco',
+            'Mexilhão',
+            'Mico',
+            'Minhoca',
+            'Morcego',
+            'Morsa',
+            'Mosca',
+            'Mosquito',
+            'Mula',
+            'Naja',
+            'Náutilo',
+            'Onça',
+            'Orangotango',
+            'Orca',
+            'Ornitorrinco',
+            'Ostra',
+            'Ouriço',
+            'Ouriço-do-Mar',
+            'Ovelha',
+            'Panda',
+            'Pantera',
+            'Papagaio',
+            'Pardal',
+            'Pássaro',
+            'Pato',
+            'Pavão',
+            'Peixe',
+            'Peixe-Boi',
+            'Pelicano',
+            'Percevejo',
+            'Perereca',
+            'Periquito',
+            'Pernilongo',
+            'Peru',
+            'Pica-Pau',
+            'Pinguim',
+            'Piolho',
+            'Piranha',
+            'Pirarucu',
+            'Polvo',
+            'Pombo',
+            'Pônei',
+            'Porco',
+            'Porco-Espinho',
+            'Porquinho-da-Índia',
+            'Preá',
+            'Preguiça',
+            'Pulga',
+            'Quati',
+            'Rã',
+            'Raposa',
+            'Ratazana',
+            'Rato',
+            'Rinoceronte',
+            'Robalo',
+            'Sabiá',
+            'Salamandra',
+            'Salmão',
+            'Sapo',
+            'Sardinha',
+            'Siriema',
+            'Serpente',
+            'Siri',
+            'Suçuarana',
+            'Sucuri',
+            'Suricate',
+            'Tamanduá',
+            'Tapir',
+            'Tarântula',
+            'Tartaruga',
+            'Tatu',
+            'Texugo',
+            'Tico-Tico',
+            'Tigre',
+            'Tilápia',
+            'Toupeira',
+            'Touro',
+            'Truta',
+            'Tubarão',
+            'Tucano',
+            'Unicórnio',
+            'Urso',
+            'Urubu',
+            'Vaca',
+            'Vaga-Lume',
+            'Vespa',
+            'Víbora',
+            'Viúva-Negra',
+            'Yorkshire',
+            'Zangão',
+            'Zebra'
+        ]
+        var frutas = [
+            'Abacate',
+            'Abacaxi',
+            'Açaí',
+            'Acerola',
+            'Ameixa',
+            'Amêndoa',
+            'Amora',
+            'Avelã',
+            'Babaçu',
+            'Banana',
+            'Cacau',
+            'Cajá',
+            'Caju',
+            'Caqui',
+            'Carambola',
+            'Castanha',
+            'Castanha-do-Pará',
+            'Cereja',
+            'Coco',
+            'Cupuaçu',
+            'Damasco',
+            'Dendê',
+            'Embaúba',
+            'Figo',
+            'Framboesa',
+            'Fruta-do-Conde',
+            'Fruta-Pão',
+            'Goiaba',
+            'Graviola',
+            'Groselha',
+            'Guaraná',
+            'Jabuticaba',
+            'Jaca',
+            'Jambo',
+            'Jamelão',
+            'Jatobá',
+            'Jenipapo',
+            'Kiwi',
+            'Laranja',
+            'Limão',
+            'Lima',
+            'Lichia',
+            'Maçã',
+            'Manga',
+            'Maracujá',
+            'Marmelo',
+            'Melancia',
+            'Melão',
+            'Mexerica',
+            'Mirtilo',
+            'Morango',
+            'Noz',
+            'Pera',
+            'Pêssego',
+            'Pitanga',
+            'Pinha',
+            'Pistache',
+            'Romã',
+            'Tangerina',
+            'Tamarindo',
+            'Uva'
+        ]
+        var listaDePalavras = [ animais, frutas ]
+        var tiposDePalavras = [ 'Animal', 'Fruta' ]
+
+    </script>
+    <script src = './forca.js'></script>
+</head>
+
+<body>
+
+    <header id = 'mecanismo'>
+
+        <button type = 'button' class = 'botão' id = 'novaPalavra' onclick = 'novaPalavra()'>Nova Palavra</button>
+        
+        <div id = 'campoPalavra'></div>
+        <div id = 'inserirLetra'>
+
+            <label for = 'letraEscolhida'>Letra: </label>
+            <input type = 'text' id = 'letraEscolhida'>
+            <button type = 'submit' class = 'botão' id = 'testarLetra' onclick = 'testarLetra()'>Testar Letra</button>
+            <button type = 'submit' class = 'botão' id = 'dica' onclick = 'darDica()'>Dica</button>
+
+        </div>
+        <div id = 'letrasDigitadas'></div>
+
+    </header>
+
+    <section id = 'forca'>
+
+        <div id = 'boneco'>
+
+            <div id = 'cabeça'></div>
+
+            <div id = 'olhos'>
+                <div id = 'olhoEsquerdo'>
+                    <div class = 'traço1'></div>
+                    <div class = 'traço2'></div>
+                </div>
+                <div id = 'olhoDireito'>
+                    <div class = 'traço1'></div>
+                    <div class = 'traço2'></div>
+                </div>
+            </div>         
+
+            <div id = 'tronco'></div>
+
+            <div id = 'braços'>
+                <div id = 'braçoEsquerdo'></div>
+                <div id = 'braçoDireito'></div>
+            </div>
+
+            <div id = 'pernas'>
+                <div id = 'pernaEsquerda'></div>
+                <div id = 'pernaDireita'></div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
