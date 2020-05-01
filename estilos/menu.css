@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Chilanka';
+    src: url('./fonts/Chilanka-Regular.ttf');
+}
+
 html {
     font-size: 1.1vw;
 }
@@ -49,26 +54,25 @@ div#classes div {
     display: inline-block;
     margin: 20px;
 
-    transition: width 0.5s, height 0.5s;
+    transition: all 0.5s;
 }
 
 div#classes div:hover {
-    width: 420px;
-    height: 320px;
+    transform: scale(1.1);
+}
+
+div#animais, div#frutas, div#mix {
+    background-size: 400px 300px;
 }
 
 div#animais {
-    background-image: url('./_imagens/Gatos.jpg');
+    background-image: url('../imagens/Gatos.jpg');
 }
 
 div#frutas {
-    background-image: url('./_imagens/Frutas.jpg');
+    background-image: url('../imagens/Frutas.jpg');
 }
 
 div#mix {
-    background-image: url('./_imagens/Interrogação.jpg');
-}
-
-caption {
-    text-align: center;
+    background-image: url('../imagens/Interrogação.jpg');
 }
