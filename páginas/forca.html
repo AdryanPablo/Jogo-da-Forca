@@ -5,9 +5,9 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animais</title>
+    <title>Mix</title>
 
-    <link rel = 'stylesheet' href = 'estilos/forca.css'>
+    <link rel = 'stylesheet' href = '../estilos/forca.css'>
     <script>
 
         var animais = [
@@ -252,11 +252,74 @@
             'Zangão',
             'Zebra'
         ]
-        var listaDePalavras = [ animais ]
-        var tiposDePalavras = [ 'Animal' ]
+        var frutas = [
+            'Abacate',
+            'Abacaxi',
+            'Açaí',
+            'Acerola',
+            'Ameixa',
+            'Amêndoa',
+            'Amora',
+            'Avelã',
+            'Babaçu',
+            'Banana',
+            'Cacau',
+            'Cajá',
+            'Caju',
+            'Caqui',
+            'Carambola',
+            'Castanha',
+            'Castanha-do-Pará',
+            'Cereja',
+            'Coco',
+            'Cupuaçu',
+            'Damasco',
+            'Dendê',
+            'Embaúba',
+            'Figo',
+            'Framboesa',
+            'Fruta-do-Conde',
+            'Fruta-Pão',
+            'Goiaba',
+            'Graviola',
+            'Groselha',
+            'Guaraná',
+            'Jabuticaba',
+            'Jaca',
+            'Jambo',
+            'Jamelão',
+            'Jatobá',
+            'Jenipapo',
+            'Kiwi',
+            'Laranja',
+            'Limão',
+            'Lima',
+            'Lichia',
+            'Maçã',
+            'Manga',
+            'Maracujá',
+            'Marmelo',
+            'Melancia',
+            'Melão',
+            'Mexerica',
+            'Mirtilo',
+            'Morango',
+            'Noz',
+            'Pera',
+            'Pêssego',
+            'Pitanga',
+            'Pinha',
+            'Pistache',
+            'Romã',
+            'Tangerina',
+            'Tamarindo',
+            'Uva'
+        ]
+        var listaDePalavras = [ animais, frutas ]
+        var tiposDePalavras = [ 'Animal', 'Fruta' ]
 
     </script>
-    <script src = './forca.js'></script>
+    <script src = '../códigos/forca.js'></script>
     
 </head>
 
@@ -264,14 +327,16 @@
 
     <header id = 'mecanismo'>
 
+        <a href = '../index.html' id = 'voltar'><div class = 'botãoVoltar'><span>Voltar</span></div></a>
         <button type = 'button' class = 'botão' id = 'novaPalavra' onclick = 'novaPalavra()'>Nova Palavra</button>
-        
+
         <div id = 'campoPalavra'></div>
         <div id = 'inserirLetra'>
 
             <label for = 'letraEscolhida'>Letra: </label>
             <input type = 'text' id = 'letraEscolhida'>
             <button type = 'submit' class = 'botão' id = 'testarLetra' onclick = 'testarLetra()'>Testar Letra</button>
+            <button type = 'submit' class = 'botão' id = 'dica' onclick = 'darDica()'>Dica</button>
 
         </div>
         <div id = 'letrasDigitadas'></div>

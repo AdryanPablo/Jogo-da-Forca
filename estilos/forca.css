@@ -65,6 +65,31 @@ div.letra span, div.hífen span {
     line-height: 60px;
 }
 
+a#voltar {
+    text-decoration: none;
+}
+
+div.botãoVoltar {
+    width: 120px;
+    height: 40px;
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    
+    margin: 5px;
+    background-color: #c33;
+
+    text-align: center;
+    color: #fff;
+    font-size: 14pt;
+    line-height: 40px;
+}
+
+div.botãoVoltar:hover {
+    background-color: #33c;
+}
+
 button#novaPalavra {
     width: 120px;
     height: 40px;
